@@ -1,0 +1,487 @@
+.img_logo {
+  height: 95px;
+  width: 80px;
+  left: 40px;
+  top: -20px;
+}
+
+.iconedefundo_menu {
+  background-image: url("../BurguerStation/assets/Fundo\ do\ Layout.png");
+}
+
+.container_lista,
+.container_cadastro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.container_lista h2,
+.container_cadastro h2 {
+  font-size: 48px;
+  margin-top: -140px;
+}
+
+h2 {
+  color: #000000;
+  font-size: 18px;
+  padding: 14px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.container_busca{
+  /* width: 100%; */
+}
+
+.Descricaotexto {
+  margin-top: 20px;
+  margin-top: 0px;
+}
+
+.valor {
+  border-radius: 5px;
+  width: 50%;
+}
+
+.container_lista hr,
+.container_cadastro hr {
+  width: 300px;
+  height: 4px;
+  border: none;
+  border-radius: 2px;
+  background-color: #eb7932;
+  margin-bottom: 50px;
+}
+
+.box_cadastro {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1440px;
+}
+
+.cadastro_coluna2 {
+  width: 45%;
+}
+
+.categoria_img {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.cadastro_coluna2,
+.valor,
+.img,
+.categoria,
+.lanches {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.box_cadastro label {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.box_cadastro input[type="text"],
+.box_cadastro textarea {
+  border-radius: 10px;
+  border: solid 1px #B3B3B3;
+  font-size: 18px;
+  padding: 0 5px;
+}
+
+.box_cadastro input[type="text"] {
+  height: 40px;
+  margin-bottom: 20px;
+  width: 400px;
+}
+
+.img {
+  /* margin-left: -170px;
+  margin-right: 50px; */
+  /* margin: 0px 140px 0 -148px; */
+}
+
+.img_span {
+  margin-left: -96px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: -60px;
+  margin-bottom: 10px;
+}
+
+.valor_img {
+  display: flex;
+  justify-content: space-between;
+}
+
+.categoria {
+  width: 70%;
+}
+
+.box_cadastro textarea {
+  resize: none;
+  height: 220px;
+  width: 400px;
+}
+
+.botaoSubmit {
+  padding: 10px 100px;
+  margin-top: -50px;
+  border-radius: 10px;
+  margin-bottom: 100px;
+
+  background-color: #eb7932;
+  font-size: 24px;
+  background-color: var(--corPrincipal);
+  box-shadow: 0 4px 4px 0 #00000025;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.img {
+  width: 20%;
+}
+
+.img svg {
+  width: 30px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.img div {
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: solid 1px #B3B3B3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  cursor: pointer;
+}
+
+
+
+.iconedefundo_cadastro {
+  padding: 100px;
+  background-image: url("../../assets/Fundo\ do\ Layout.png");
+}
+
+table {
+  margin-top: 100px;
+  width: 90%;
+  max-width: 1200px;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+th {
+  border-bottom: solid 2px var(--corPrincipal);
+  padding: 0 3px 5px 3px;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+td {
+  padding: 12px 16px 6px 16px;
+  border-bottom: solid 2px #B3B3B350;
+  font-weight: 600;
+}
+
+table svg {
+  width: 30px;
+  cursor: pointer;
+}
+
+footer {
+  /* margin-top: 60px; */
+}
+
+/* MEDIA */
+@media screen and (max-width: 1000px) {
+  table {
+    width: 98%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .box_cadastro {
+    flex-direction: column;
+  }
+
+  .linha1,
+  .cadastro_coluna2 {
+    width: 100%;
+  }
+
+
+
+  table {
+    text-align: left;
+    max-width: 460px;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tr {
+    display: flex;
+    margin: 0 1rem;
+    padding: .5rem;
+    flex-direction: column;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: solid 1px var(--corPrincipal);
+    box-shadow: var(--sombra);
+  }
+
+  td {
+    border-bottom: none;
+    padding: 3px 0;
+  }
+
+  td::before {
+    content: attr(data-cell);
+    font-weight: 600;
+    border-bottom: solid 2px #B3B3B350;
+  }
+
+  td:last-child {
+    align-self: flex-end;
+  }
+
+}
+
+/* CADASTRO */
+/* *{
+     font-family: "Italianno", cursive;
+}
+
+.container_lista,
+.container_cadastro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container_lista h2,
+.container_cadastro h2 {
+  font-size: 48px;
+  margin-top: 100px;
+}
+
+.container_lista hr,
+.container_cadastro hr {
+  width: 300px;
+  height: 4px;
+  border: none;
+  border-radius: 2px;
+  background-color: var(--corPrincipal);
+  margin-bottom: 50px;
+}
+
+.box_cadastro {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1440px;
+ 
+
+}
+
+.cadastro_coluna1 {
+ 
+  width: 45%;
+}
+
+.cadastro_coluna2 {
+
+  width: 45%;
+}
+
+.categoria_img {
+  display: flex;
+  justify-content: space-between;
+}
+
+.valor_peso {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cadastro_coluna2,
+.peso,
+.valor,
+.img,
+.categoria,
+.bolos {
+  display: flex;
+  flex-direction: column;
+}
+
+.box_cadastro label {
+  font-size: 40px;
+}
+
+.box_cadastro input[type="text"],
+.box_cadastro textarea {
+  border-radius: 10px;
+  border: solid 1px #B3B3B3;
+  font-size: 18px;
+  padding: 0 5px;
+   background-color: #D9D9D9;
+}
+
+.box_cadastro input[type="text"] {
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.categoria {
+  width: 70%;
+}
+
+.box_cadastro textarea {
+  resize: none;
+  height: 200px;
+}
+
+.botaoSubmit {
+  font-size: 26px;
+  margin: 50px 0;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--corPrincipal);
+  padding: 10px 100px;
+  box-shadow: 0 4px 4px 2px #00000025;
+  cursor: pointer;
+}
+
+.img {
+  width: 20%;
+}
+
+.img svg {
+  width: 30px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.img div {
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: solid 1px #B3B3B3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  cursor: pointer;
+}
+
+.valor {
+  width: 50%;
+}
+
+.peso {
+  width: 40%;
+} */
+
+
+
+
+
+/* LISTA
+table {
+
+  width: 90%;
+  max-width: 1200px;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+th {
+  border-bottom: solid 2px var(--corPrincipal);
+  padding: 0 3px 5px 3px;
+  font-size: 18px;
+}
+
+td {
+  padding: 12px 16px 6px 16px;
+  border-bottom: solid 2px #B3B3B350;
+}
+
+table svg {
+  width: 30px;
+  cursor: pointer;
+} */
+
+
+
+/* 
+
+@media screen and (max-width: 1000px) {
+  table {
+    width: 98%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .box_cadastro {
+    flex-direction: column;
+  }
+
+  .cadastro_coluna1,
+  .cadastro_coluna2 {
+    width: 100%;
+  }
+
+  
+
+  
+  table {
+    text-align: left;
+    max-width: 460px;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tr {
+    display: flex;
+    margin: 0 1rem;
+    padding: .5rem;
+    flex-direction: column;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: solid 1px var(--corPrincipal);
+    box-shadow: var(--sombra);
+  }
+
+  td {
+    border-bottom: none;
+    padding: 3px 0;
+  }
+
+  td::before {
+    content: attr(data-cell);
+    font-weight: 600;
+    border-bottom: solid 2px #B3B3B350;
+  }
+
+  td:last-child {
+    align-self: flex-end;
+  }
+} */

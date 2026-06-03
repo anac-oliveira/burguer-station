@@ -1,0 +1,216 @@
+.iconedefundo_cardapio {
+    background-image: url("../../assets/Fundo\ do\ Layout.png");
+}
+
+.icone_inicio {
+    padding: 25px 25px;
+}
+
+.box_busca{
+    position: relative;
+    width: 60%;
+    max-width: 500px;
+    margin: 0 10px;
+}
+
+.campo_busca{
+     width: 100%;
+    height: 42px;
+    border-radius: 10px;
+    border: solid 1px #cccccc;
+    padding-left: 2.5rem;
+    font-size: 1rem;
+}
+
+.icone_lupa{
+    height: 24px;
+    position: absolute;
+    left: 9px;
+    top: 9px;
+    fill: #b0b0b0;
+}
+
+
+.img_logo {
+    height: 115px;
+    width: 100px;
+    margin-top: 24px;
+    margin-left: 42px;
+}
+
+
+.img_fundo {
+    width: 1943px;
+    height: 849px;
+
+}
+
+h1 {
+    font-family: "Neuton", serif;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+h2 {
+    font-family: "Moul", serif;
+    color: #00000070;
+    height: 12px;
+    font-size: 16px;
+    margin-bottom: -10px;
+    margin-top: -10px;
+}
+
+/* .bs404{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5%;
+}
+
+.bs404 img{
+    height: 200px;
+} */
+
+.titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0;
+  margin-top: 100px;
+  /* background-color: blueviolet; */
+}
+
+.titulo .titulo_span {
+  font-size: 48px;
+  text-align: center;
+  font-family: "Moul", serif;
+}
+
+.titulo hr {
+  width: 300px;
+  height: 4px;
+  border: none;
+  border-radius: 2px;
+  background-color: #EB7932;
+}
+
+.acessivel {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10%;
+    /* font-family: "Neuton", serif;
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto; */
+}
+
+.container{
+    display: flex;
+    gap: 5%;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+p {
+    font-family: "Neuton", serif;
+    font-size: 11px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+/* .card_produto {
+    width: 292px;
+    height: 445px;
+    background: linear-gradient(178deg, rgba(229, 124, 32, 1) 50%, rgba(137, 29, 19, 1) 100%);
+    border-radius: 30px;
+    padding: 30px 10px;
+    margin-bottom: 133px;
+    margin-right: 60px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 70px; ----
+    text-align: center;
+    font-size: 10px;
+    box-shadow: 0 4px 4px 2px #00000025;
+    background-color: #ffffff;
+} */
+
+.div_img{
+    display: flex;
+    align-items: flex-end;
+    height: 180px;
+    width: 250px;
+}
+
+.sessao_card4 .div_img img{
+    width: 280px;
+}
+
+.descricao {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 275px;
+    height: 60px;
+}
+
+ .cards p{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-weight: 600;
+}
+
+footer{
+    background-color: #EB7932;
+    height: 100px;
+}
+
+.rodape_texto{
+    font-size: 35px;
+    text-align: center;
+    padding-top: 26px;
+}
+
+.whatsapp{
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  transition: transform 0.5s ease-in-out,
+              filter 0.5s ease-in-out;
+}
+
+.whatsapp img{
+  width: 80px;
+  filter: drop-shadow(0 5px 1px #00000025);
+}
+
+.whatsapp:hover{
+  transform: scale(1.2);
+  filter: drop-shadow(0 10px 2px #00000025);
+}
+
+/*MEDIA*/
+@media  screen and (max-width: 1100px){   
+
+    .cards {
+    /* flex-wrap: wrap; */
+    }
+    
+}

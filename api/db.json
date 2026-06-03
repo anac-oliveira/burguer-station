@@ -1,0 +1,397 @@
+{
+  "users": [
+    {
+      "email": "burger@station.com.br",
+      "senha": "072825"
+    }
+  ],
+  "lanches": [
+    {
+      "nome": "EXPRESSO DUO",
+      "categorias": [
+        "frango"
+      ],
+      "descricao": "Um suculento hambúrguer de frango, alface, tomate e um delicioso molho furioso de alho.",
+      "imagens": [
+        "card_de_frango2.png"
+      ],
+      "id": "f2",
+      "preco": 46.99,
+      "peso": null
+    },
+    {
+      "nome": "PLATAFORMA CHICKEN",
+      "categorias": [
+        "frango"
+      ],
+      "descricao": "Um delicioso e suculento filé de frango crocante, maionese e alface.",
+      "imagens": [
+        "card_de_frango3.png"
+      ],
+      "id": "f3",
+      "preco": 43.99,
+      "peso": null
+    },
+    {
+      "nome": "COMBO FERROVIA",
+      "categorias": [
+        "frango"
+      ],
+      "descricao": "Maionese, alface, tomate, cebola, ketchup, picles e fritas.",
+      "imagens": [
+        "transferir.png"
+      ],
+      "id": "f4",
+      "preco": 58.79,
+      "peso": null
+    },
+    {
+      "nome": "Brisket Texano",
+      "descricao": "Carne defumada bem macia, pão brioche e barbecue. Sabor marcante e irresistível.",
+      "preco": 38.79,
+      "categorias": [
+        "carne"
+      ],
+      "imagens": [
+        "1765985164576.png"
+      ],
+      "id": "Er2d9Kl"
+    },
+    {
+      "nome": "Double Melt Beef",
+      "descricao": "Carne suculenta com dupla camada de queijo e molho cremoso. Perfeito para quem ama exagerar no sabor.\n",
+      "preco": 38.79,
+      "categorias": [
+        "carne"
+      ],
+      "imagens": [
+        "1765985469070.png"
+      ],
+      "id": "KX-1_js"
+    },
+    {
+      "nome": " Black Grill Prime",
+      "descricao": "Pão macio, hambúrguer Angus suculento e molho defumado exclusivo. Intensamente saboroso.\n",
+      "preco": 49.9,
+      "categorias": [
+        "carne"
+      ],
+      "imagens": [
+        "1765985519534.png"
+      ],
+      "id": "JjY7GlD"
+    },
+    {
+      "nome": "Costela Desfiada",
+      "descricao": "Costela bem cozida, desfiada e temperada, com picles e maionese da casa no pão rústico. Sabor intenso e textura perfeita.",
+      "preco": 38.9,
+      "categorias": [
+        "carne"
+      ],
+      "imagens": [
+        "1765985681217.png"
+      ],
+      "id": "fWthzR4"
+    },
+    {
+      "nome": "Smoke House Master",
+      "descricao": "Hambúrguer alto, bacon crocante e queijo derretido. Combinação clássica com toque premium.",
+      "preco": 45.9,
+      "categorias": [
+        "carne"
+      ],
+      "imagens": [
+        "1765985779417.png"
+      ],
+      "id": "biCJKfB"
+    },
+    {
+      "nome": "Picanha Melt",
+      "descricao": "Picanha macia com queijo derretido e cebola na manteiga. Sanduíche forte e cheio de sabor.",
+      "preco": 50,
+      "categorias": [
+        "carne"
+      ],
+      "imagens": [
+        "1765985889832.png"
+      ],
+      "id": "RzEOG6j"
+    },
+    {
+      "nome": "Smash Burger",
+      "descricao": "Dois hambúrgueres fininhos e suculentos, queijo derretido e molho especial no pão macio. Simples e muito saboroso.",
+      "preco": 38.9,
+      "categorias": [
+        "carne"
+      ],
+      "imagens": [
+        "1765985967729.png"
+      ],
+      "id": "HUhKEGN"
+    },
+    {
+      "nome": "Casquinha de chocolate",
+      "descricao": "Casquinha de chocolate",
+      "preco": 3,
+      "categorias": [
+        "sobremesas"
+      ],
+      "imagens": [
+        "1765986168512.png"
+      ],
+      "id": "KbbCN4J"
+    },
+    {
+      "nome": "Casquinha de baunilha",
+      "descricao": "Casquinha de baunilha",
+      "preco": 3,
+      "categorias": [
+        "sobremesas"
+      ],
+      "imagens": [
+        "1765986222206.png"
+      ],
+      "id": "JUVtEry"
+    },
+    {
+      "nome": "Casquinha de mista",
+      "descricao": "Casquinha de chocolate com baunilha",
+      "preco": 3,
+      "categorias": [
+        "sobremesas"
+      ],
+      "imagens": [
+        "1765986830632.png"
+      ],
+      "id": "8k9LNSs"
+    },
+    {
+      "nome": "Milk shake açai ",
+      "descricao": "Milk shake açai",
+      "preco": 24,
+      "categorias": [
+        "sobremesas"
+      ],
+      "imagens": [
+        "1765986900544.png"
+      ],
+      "id": "ZYxbI0I"
+    },
+    {
+      "nome": "Milk shake duo chocolate ",
+      "descricao": "Milk shake duo chocolate ",
+      "preco": 24,
+      "categorias": [
+        "sobremesas"
+      ],
+      "imagens": [
+        "1765986949097.png"
+      ],
+      "id": "D285JiL"
+    },
+    {
+      "nome": "Milk shake morango",
+      "descricao": "Milk shake morango",
+      "preco": 24,
+      "categorias": [
+        "sobremesas"
+      ],
+      "imagens": [
+        "1765987005025.png"
+      ],
+      "id": "jdrFKl9"
+    },
+    {
+      "nome": "Sundae morango",
+      "descricao": "Sundae morango",
+      "preco": 15,
+      "categorias": [
+        "sobremesas"
+      ],
+      "imagens": [
+        "1765987126326.png"
+      ],
+      "id": "pwf8Bg2"
+    },
+    {
+      "nome": "Sundae chocolate",
+      "descricao": "Sundae chocolate",
+      "preco": 15,
+      "categorias": [
+        "sobremesas"
+      ],
+      "imagens": [
+        "1765987158349.png"
+      ],
+      "id": "6wp2zVm"
+    },
+    {
+      "nome": "Sundae doce de leite",
+      "descricao": "Sundae doce de leite",
+      "preco": 15,
+      "categorias": [
+        "sobremesas"
+      ],
+      "imagens": [
+        "1765987181902.png"
+      ],
+      "id": "cUzDjni"
+    },
+    {
+      "nome": "Coca cola",
+      "descricao": "Coca cola lata",
+      "preco": 5,
+      "categorias": [
+        "bebidas"
+      ],
+      "imagens": [
+        "1765987307867.png"
+      ],
+      "id": "1uZb8-y"
+    },
+    {
+      "nome": "Fanta laranja",
+      "descricao": "Fanta laranja lata",
+      "preco": 5,
+      "categorias": [
+        "bebidas"
+      ],
+      "imagens": [
+        "1765987350202.png"
+      ],
+      "id": "Ej-N6KU"
+    },
+    {
+      "nome": "Guaraná",
+      "descricao": "Guaraná lata",
+      "preco": 5,
+      "categorias": [
+        "bebidas"
+      ],
+      "imagens": [
+        "1765987383212.png"
+      ],
+      "id": "NZMhTvV"
+    },
+    {
+      "nome": "Frest Booster",
+      "descricao": "Hambúrguer vegetal leve com tomate marinado e maionese cítrica. Uma explosão de frescor.\n",
+      "preco": 49.9,
+      "categorias": [
+        "vegetariano"
+      ],
+      "imagens": [
+        "1765987553035.png"
+      ],
+      "id": "Vw3rAVw"
+    },
+    {
+      "nome": "Fresh Boost",
+      "descricao": "Hambúrguer vegetal leve com tomate marinado e maionese cítrica. Uma explosão de frescor.\n",
+      "preco": 38.79,
+      "categorias": [
+        "vegetarianos"
+      ],
+      "imagens": [
+        "1765987931929.png"
+      ],
+      "id": "pnyT4J6"
+    },
+    {
+      "nome": "Eco Crunch",
+      "descricao": "Hambúrguer vegetal com crocância marcante e molho herbal cremoso. Refrescante e cheio de personalidade.",
+      "preco": 38.79,
+      "categorias": [
+        "vegetarianos"
+      ],
+      "imagens": [
+        "1765987984688.png"
+      ],
+      "id": "QEJepZJ"
+    },
+    {
+      "nome": "Spice Garden",
+      "descricao": " Pão, hamburguer vegetal picante temperado com especiarias  servido com cebola roxa, alface e maionese da casa.\n",
+      "preco": 49.9,
+      "categorias": [
+        "vegetarianos"
+      ],
+      "imagens": [
+        "1765988026210.png"
+      ],
+      "id": "g85dyH0"
+    },
+    {
+      "nome": "Veg Power Bite",
+      "descricao": "Hambúrguer vegetal nutritivo com cenoura crocante e molho caseiro. Energia e sabor em cada mordida.\n",
+      "preco": 45,
+      "categorias": [
+        "vegetarianos"
+      ],
+      "imagens": [
+        "1765988073697.png"
+      ],
+      "id": "kgCYwuk"
+    },
+    {
+      "nome": "Tiras de frango",
+      "descricao": "Tiras de frango com molho especial",
+      "preco": 55,
+      "categorias": [
+        "porcoes"
+      ],
+      "imagens": [
+        "1765988198142.png"
+      ],
+      "id": "ytEkjC8"
+    },
+    {
+      "nome": "Tiras de frango",
+      "descricao": "Tiras de frango com molho especial",
+      "preco": 55,
+      "categorias": [
+        "acompanhamentos"
+      ],
+      "imagens": [
+        "1765988251535.png"
+      ],
+      "id": "mvVVl3j"
+    },
+    {
+      "nome": "Porção de batatas ",
+      "descricao": "Porção de batatas  com requeijão cremoso e frango desfiado",
+      "preco": 56,
+      "categorias": [
+        "acompanhamentos"
+      ],
+      "imagens": [
+        "1765988337242.png"
+      ],
+      "id": "cTw5ra_"
+    },
+    {
+      "nome": "Polenta frita",
+      "descricao": "Polenta frita com molho especial",
+      "preco": 43.5,
+      "categorias": [
+        "acompanhamentos"
+      ],
+      "imagens": [
+        "1765988399620.png"
+      ],
+      "id": "n8A6yKq"
+    },
+    {
+      "nome": "Dadinhos de tapioca",
+      "descricao": "Dadinhos de tapioca com geleia de pimenta",
+      "preco": 57,
+      "categorias": [
+        "acompanhamentos"
+      ],
+      "imagens": [
+        "1765988486647.png"
+      ],
+      "id": "4GYyb4w"
+    }
+  ]
+}

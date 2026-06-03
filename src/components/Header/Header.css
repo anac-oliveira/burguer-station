@@ -1,0 +1,92 @@
+/* HEADER */
+header {
+    background-color: var(--corPrincipal, #EB7932);
+    display: flex;
+}
+
+.container_geral {
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.me-auto {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo_header {
+    height: 85px;
+    width: 70px;
+    cursor: pointer;
+}
+
+.busca {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+}
+
+.busca svg {
+    width: 26px;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+.input-pesquisa {
+    height: 36px;
+    width: 100%;
+    border-radius: 10px;
+    padding-left: 40px;
+}
+
+.botoes_direita {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.botoes_direita button{
+    background-color: transparent;
+    border: none;
+}
+
+.add {
+    height: 40px;
+    cursor: pointer;
+    color: black;
+}
+
+.logout {
+    width: 40px;
+    cursor: pointer;
+    color: black;
+}
+
+.login_header {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .me-auto {
+        align-items: end;
+    }
+    .logo_header {
+        margin: 1rem 0;
+    }
+    .botoes_direita {
+        margin-bottom: 1rem;
+    }
+}

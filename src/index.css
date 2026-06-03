@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Neuton", serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+:root {
+  --corBackground: #FFFFFF;
+  --corPrincipal: #EB7932;
+  --corSecundaria: #891D13;
+  --corFontClara: #FFFFFF;
+  --corFontEscura: #000000;
+  --alturaRodape: 60px;
+  --fontLogo: "Neuton", sans-serif;
+  --contComplementar: "Neuton", serif;
+}
+
+body{
+  background-color: var(--corBackground);
+}
+
