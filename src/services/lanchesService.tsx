@@ -1,10 +1,11 @@
 import axios from "axios";
 import type { Lanche } from "../types/Lanche";
 
+const API_BASE = "http://localhost:5103/api"
 export const getLanche = async (): Promise<Lanche[]> => {
     try {
-        const resposta = await axios.get("http://localhost:3000/lanches");
-        return resposta.data;
+          const resposta = await axios.get(`${API_BASE}/produtos`);
+          return resposta.data;
     } catch (error) {
       console.error("Erro ao buscar os dados: ", error);
       throw error;
@@ -15,9 +16,9 @@ export const getLanche = async (): Promise<Lanche[]> => {
 
 export const deleteLanche = async (idLanche: string): Promise<void> => {
   try {
-    await axios.delete(`http://localhost:3000/lanches/${idLanche}`)
+   axios.delete(`${API_BASE}/Produtos/${idLanche}`);
   } catch (error) {
-    console.error("Erro ao deletar o bolo: ", error);
+    console.error("Erro ao deletar o lanche: ", error);
     throw error;
   }
 }
@@ -27,10 +28,10 @@ export const enviarFotoParaAPI = async (file: File): Promise<string | undefined>
   formData.append("file", file);
 
   try {
-    const res = await axios.post("http://localhost:3000/upload", formData, {
+    const res = await axios.post(`${API_BASE}/upload`, formData, {
       headers: { "Content-Type": "multipart/form-data" }
     });
-    return res.data.filename;
+     return res.data.caminhoImagem ?? res.data.CaminhoImagem;
   } catch (error) {
     console.error("Erro no upload da imagem: ", error);
     return undefined;
@@ -39,7 +40,7 @@ export const enviarFotoParaAPI = async (file: File): Promise<string | undefined>
 
 export const postLanche = async (lanche: Lanche): Promise<void> => {
   try {
-    await axios.post("http://localhost:3000/lanches", lanche);
+    await axios.post(`${API_BASE}/produtos`, lanche);
   } catch (error) {
     console.error("Erro ao cadastrar o lanche:", error);
     throw error;
@@ -51,7 +52,7 @@ export const putLanche = async (lanche: Lanche): Promise<void> => {
     if (!lanche.id) {
       throw new Error("ID do lanche não informado");
     }
-    await axios.put(`http://localhost:3000/lanches/${lanche.id}`, lanche);
+     await axios.put(`${API_BASE}/produtos/${lanche.id}`, lanche);
   } catch (error) {
     console.error("Erro ao atualizar o lanche", error);
     throw error;

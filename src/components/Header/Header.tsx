@@ -11,8 +11,10 @@ export default function Header() {
   const [searchTerm, setSearchTerm] = useState('');
   const navigate = useNavigate();
 
-  // Checa login baseado no cookie 'auth_hash'
-  const isLoggedIn = useMemo(() => !!Cookies.get('auth_hash'), []);
+  // Checa login baseado no cookie 'auth_token'
+  const isLoggedIn = useMemo(() => {
+    return !!Cookies.get('auth_token');
+  }, []);
 
   const handleSearch = () => {
     if (!searchTerm.trim()) return; // ignora buscas vazias
@@ -24,9 +26,10 @@ export default function Header() {
     if (event.key === 'Enter') handleSearch();
   };
 
-  const handleLogout = () => {
-    Cookies.remove('auth_hash');
-    navigate('/');
+ const handleLogout = () => {
+    Cookies.remove('auth_token');
+
+     navigate('/');
     window.location.reload();
   };
 
