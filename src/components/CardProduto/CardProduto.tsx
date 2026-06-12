@@ -1,7 +1,8 @@
 import type { CardProdutoProps } from '../../types/CardProdutoProps';
 import './CardProduto.css';
 import lanche_default from '../../assets/Logo Menu.png';
-import { formatosService } from '../../services/formatosService'
+import { formatosService } from '../../services/formatosService';
+import { Link } from 'react-router-dom';
 
 
 export default function CardProduto( {nome, descricao, preco, imagem, id}: CardProdutoProps ) {
@@ -14,7 +15,10 @@ export default function CardProduto( {nome, descricao, preco, imagem, id}: CardP
             <img className="prduto_img" src={imageUrl} alt={nome} />
             <h2 className='nome_produto_'>{nome}</h2>
             <p>{(descricao.length > 0) ? descricao : "Descrição não informada"}</p>
-            <span className='card_span'>{ formatosService.PrecoBR(preco) }</span><br/> 
+            <span className='card_span'>{ formatosService.PrecoBR(preco) }</span>
+            <Link to={id ? `/avaliacao/${id}` : '#'} className="card_btn_avaliar">
+              Avaliar
+            </Link>
     </div>
   )
 }

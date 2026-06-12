@@ -4,6 +4,7 @@ import Home from "./pages/Home/Home"
 import Cadastro from "./pages/Cadastro/Cadastro"
 import RotaProtegida from "./components/RotaProtegida/RotaProtegida"
 import Login from "./pages/Login/Login"
+import Avaliacao from "./pages/Avaliacao/Avaliacao"
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
           } />
           <Route path="/produtos/:categoria" element={<Produtos />} />
           <Route path="/produtos/pesquisa" element={<Produtos />} />
+          <Route path="/avaliacao/:id" element={<Avaliacao />} />
         </Routes>
       </BrowserRouter>
     </>

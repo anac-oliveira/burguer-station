@@ -1,7 +1,7 @@
 .cards {
     display: flex;
     justify-content: center;
-    font-family: "Neuton", serif;
+    font-family: "Bebas Neue", cursive;
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
@@ -24,9 +24,10 @@ p {
 
 
 .card_produto {
-    width: 292px;
-    height: 445px;
-    background: linear-gradient(178deg, rgba(229, 124, 32, 1) 50%, rgba(137, 29, 19, 1) 100%);
+    width: 330px;
+    min-height: 525px;
+    height: auto;
+    background: linear-gradient(178deg, #e57c20 50%, rgba(137, 29, 19, 1) 100%);
     border-radius: 30px;
     padding: 30px 10px;
     margin-bottom: 133px;
@@ -90,4 +91,27 @@ p {
     background-color: #ffffff;
     border-radius: 10px;
     padding: 0 93px;
+}
+
+.card_btn_avaliar {
+    display: inline-block;
+    padding: 8px 30px;
+    background-color: #ffffff;
+    color: #891d13;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: all 0.2s ease-in-out;
+    margin-top: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 2px solid transparent;
+}
+
+.card_btn_avaliar:hover {
+    background-color: #891d13;
+    color: #ffffff;
+    border-color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }

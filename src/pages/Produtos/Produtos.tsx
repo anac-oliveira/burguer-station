@@ -94,6 +94,7 @@ export default function Produtos() {
                             return (
                                 <CardProduto
                                     key={lanche.id}
+                                    id={lanche.id}
                                     nome={lanche.nome}
                                     descricao={lanche.descricao}
                                     preco={lanche.preco}

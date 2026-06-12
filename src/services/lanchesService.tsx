@@ -14,6 +14,27 @@ export const getLanche = async (): Promise<Lanche[]> => {
     //catch = executa um código de tratamento quando o erro ocorre.
 }
 
+export const getLancheById = async (id: string): Promise<Lanche> => {
+  try {
+    const resposta = await axios.get(`${API_BASE}/produtos/${id}`);
+    return resposta.data;
+  } catch (error) {
+    console.error(`Erro ao buscar o lanche com ID ${id}: `, error);
+    // Fallback: busca todos os lanches e filtra pelo id
+    try {
+      const todosLanches = await getLanche();
+      const lancheEncontrado = todosLanches.find(l => String(l.id) === String(id));
+      if (lancheEncontrado) {
+        return lancheEncontrado;
+      }
+    } catch (fallbackError) {
+      console.error("Erro no fallback de buscar todos os lanches", fallbackError);
+    }
+    throw error;
+  }
+};
+
+
 export const deleteLanche = async (idLanche: string): Promise<void> => {
   try {
    axios.delete(`${API_BASE}/Produtos/${idLanche}`);
